@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
+const middlewares = require('./middlewares')
 
 const app = express();
 
@@ -15,20 +16,8 @@ app.get('/', (req, res, ) => {
     })
 })
 
-app.use((req, res, next) => {
-    const error = new Error(`Not found - ${req.originalUrl}`)
-    res.status(404)
-    next(error)
-})
-
-app.use((error, req, res, next) => {
-    const statusCode = res.statusCode === 200 ? 500 : res.statusCode
-    res.status(statusCode)
-    res.json({
-        message: error.message,
-        stack: process.env.NODE_ENV === 'production' ? '🤣' : error.stack
-    })
-})
+app.use(middlewares.notFound)
+app.use(middlewares.errorHandler)
 
 const port = process.env.PORT || 1337;
 app.listen(port, () => {
