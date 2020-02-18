@@ -1,0 +1,24 @@
+{
+  "name": "blood-project",
+  "version": "1.0.0",
+  "description": "A blood donation project using webdev techs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegodario88/blood-project.git"
+  },
+  "keywords": [
+    "JS",
+    "CSS",
+    "HTML"
+  ],
+  "author": "Diego Dario",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegodario88/blood-project/issues"
+  },
+  "homepage": "https://github.com/diegodario88/blood-project#readme"
+}
