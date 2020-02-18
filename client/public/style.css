@@ -162,3 +162,20 @@ section.form.hide {
     height: 0;
     margin-top: -70px;
 }
+
+@media ( min-width: 900px ) {
+    section.form{ 
+        font-size: 18px;
+        padding: 16px 64px;
+        grid-gap: 45px;
+    }
+    header h1, main h2 {
+        margin-bottom: 70px;
+    }
+    header, section.form, main{
+        margin: 0 auto 70px auto;
+    }
+    .logo {
+        margin: 70px 0;
+    }
+  }
