@@ -20,7 +20,7 @@ h1, h2 {
 
 .logo {
     width: 120px;
-    margin: 70px 0;
+    margin: 40px 0;
 }
 
 header, main, footer{
@@ -28,13 +28,13 @@ header, main, footer{
 }
 
 header, section.form, main{
-    margin: 0 auto 70px auto;
+    margin: 0 auto 30px auto;
     width: 90%;
     max-width: 500px;
 }
 
 header h1, main h2 {
-    margin-bottom: 70px;
+    margin-bottom: 23px;
 }
 header p {
     font-size: 14px;
@@ -44,7 +44,7 @@ header button {
     margin-top: 16px;
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: #fc297f;
+    background-color: #ff4f4f;
     text-transform: capitalize;
     font-weight: bold;
     border: none;
@@ -54,24 +54,24 @@ header button {
 
 .form h2 {
     text-align: right;
-    color: darkslateblue;   
+    color: #323232;   
 }
 
 .form p {
     text-align: center;
-    color: darkslateblue;
+    color: #323232;
 }
 
 
 section.form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 45px;
+    grid-gap: 10px;
     align-items: center;
-    background-color: #fc297f;
-    padding: 16px 64px;
+    background-color: #ff4f4f;
+    padding: 14px 14px;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 form input,
@@ -81,7 +81,7 @@ form button {
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px aliceblue solid;
-    color: darkslateblue;
+    color: #323232;
 }
 
 form input{
@@ -98,7 +98,7 @@ main h2, main p{
 }
 
 main h2  span{
-    color: #fc297f;
+    color: #ff4f4f;
     text-transform: capitalize;
 }
 
@@ -108,7 +108,7 @@ main .donors{
 }
 
 .blood{
-    color: #fc297f;
+    color: #ff4f4f;
     font-weight: bold;
     font-size: 12px;
 
