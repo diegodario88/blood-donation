@@ -15,7 +15,7 @@ const limiter = new RateLimit({
         uri: DATABASE_URL,
         expireTimeMs: rateLimitDelay
     }),
-    max: 1,
+    max: 5,
     windowMs: rateLimitDelay
 })
 

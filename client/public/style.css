@@ -115,8 +115,9 @@ main .donors{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding-top: 20px;
     position: relative;
+       
 }
 
 .donor p {
