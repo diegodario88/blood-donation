@@ -16,6 +16,21 @@ export const createDonorEntry = async (entry) => {
         },
         body: JSON.stringify(entry)
     })
+    
+    let json
 
-    return response.json()
+    if(response.headers.get('content-type').includes('text/html')){
+        const message = await response.text()
+        json = {
+            message
+        }
+    } else {
+        json = await response.json()
+    }
+
+    if(response.ok) return json
+
+    const error = new Error(json.message)
+    error.response = json
+    throw error
 }

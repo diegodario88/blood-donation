@@ -7,8 +7,12 @@ const entry = {
     bloodType: document.getElementById('blood').value,
     apiKey: document.getElementById('apiKey').value
 }
+if (entry.name && entry.email && entry.bloodType !== '') {
     const result = await createDonorEntry(entry)
-    console.log(result);
+    location.reload(true)
+} else {
+    alert('Name, Email, BloodType and Password must be provide!')
+    }
 }
 
 document
